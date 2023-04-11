@@ -22,7 +22,6 @@ const fullTexture = useTexture(snap.fullDecal);
             material-roughness={1}
             dispose={null}
         >
-            
         </mesh>
    </group>
   )
