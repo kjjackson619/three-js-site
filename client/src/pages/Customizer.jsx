@@ -40,7 +40,9 @@ const Customizer = () => {
         />
      
       case "aipicker":
-        return <AIPicker />
+        return <AIPicker 
+          
+        />
         
       default:
         return null;
