@@ -35,7 +35,7 @@ const Customizer = () => {
       case "filepicker":
         return <FilePicker />
      
-      case "aiPicker":
+      case "aipicker":
         return <AIPicker />
         
       default:
