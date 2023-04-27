@@ -41,11 +41,27 @@ const Customizer = () => {
      
       case "aipicker":
         return <AIPicker 
-          
+          prompt={prompt}
+          setPrompt={setPrompt}
+          generatingImg={generatingImg}
+          handleSubmit={handleSubmit}
         />
         
       default:
         return null;
+    }
+  }
+
+  const handleSubmit = async (type) => {
+    if(!prompt) return alert("Please enter a prompt");
+
+    try {
+
+    } catch (error) {
+      alert(error)
+    } finally {
+      setGeneratingImg(false);
+      setActiveEditorTab("");
     }
   }
 
@@ -61,7 +77,7 @@ const Customizer = () => {
 
   const handleActiveFilterTab = (tabName) => {
     switch (tabName) {
-      case "logoshirt": 
+      case "logoShirt": 
         state.isLogoTexture = !activeFilterTab[tabName];
         break;
       case "stylishShirt":
